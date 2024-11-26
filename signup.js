@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if(error == null){
             formEmail.value = '';
             formPassword.value = '';
-            alertText.innerHTML = 'Signup sucessful. <a href="/login.html">Click here to login</a>.'
+            alertText.innerHTML = 'Signup sucessful. <a href="/signin.html">Click here to login</a>.'
 
         } else {
             alertText.innerText = error;
