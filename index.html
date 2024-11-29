@@ -7,7 +7,29 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <button id="signout" type="submit">Logout</button>
+    <div style="display: flex; align-items: center;">
+        <div style="flex: 1;">
+            <h1>Goal Tracker</h1>
+        </div>
+        <div>
+            <button id="signout" class="button-secondary" type="submit">Logout</button>
+        </div>
+        
+    </div>
+    
+    <div class="container">
+        <div style="display: flex; align-items: center;">
+            <div style="flex: 1;">
+                <h2>Goals</h2>
+            </div>
+            <div>
+                <button class="button-primary" type="submit">New goal</button>
+            </div>
+        </div>
+        <div class="goal-list">
+            <!--List Items-->
+        </div>
+    </div>
     <script type="module" src="app.js"></script>
 </body>
 </html>
