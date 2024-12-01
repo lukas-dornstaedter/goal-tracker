@@ -18,7 +18,6 @@ async function getGoals() {
     const { data, error } = await supabase.from('goal').select();
 
     if (error == null) {
-        console.log(data);
         return data;
     } else {
         console.error('Error fetching goals:', error);
@@ -29,15 +28,15 @@ async function getGoals() {
 function renderGoals(){
     window.goals.forEach((goal)=>{
         const goalList = document.getElementsByClassName('goal-list')[0];
-        const goalItem = document.createElement('div')
+        const goalItem = document.createElement('a')
+        goalItem.href = '/goal.html?goalid=' + goal.id
         goalItem.classList.add('goal-item');
         goalItem.innerHTML = `
                         <h3>${goal.name}</h3>
                         <div>
-                            <p>Angaben zur Frequenz</p>
+                            <p>${goal.frequency} time per ${goal.frequency_type}</p>
                         </div>
         `;
-        console.log(goalItem)
         goalList.appendChild(goalItem);
     })
 }

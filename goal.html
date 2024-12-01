@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaol Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div style="display: flex; align-items: center;">
+        <div style="flex: 1;">
+            <a href="/index.html"><h1>Goal Tracker</h1></a>
+        </div>
+        <div>
+            <button id="signout" class="button-secondary" type="submit">Logout</button>
+        </div>
+        
+    </div>
+    
+    <div class="container">
+       <h2 id="goal-headline"></h2>
+       <div>
+        <button id="capture-activity" class="button-primary">Track goal</button>
+       </div>
+       <div id="activity">
+        <table class="activities-table">
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Datetime</th>
+            </tr>
+        </thead>
+        <tbody id="activities-history">
+            <!---->
+        </tbody>
+        </table>
+       </div>
+    </div>
+    <script type="module" src="goal.js"></script>
+</body>
+</html>
