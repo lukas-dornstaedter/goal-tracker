@@ -8,6 +8,15 @@ document.addEventListener('DOMContentLoaded', () => {
         window.location.href = '/signin.html';
     });
 
+    document.getElementById('new-goal-button').addEventListener('click', ()=>{
+        const newGoalContainer = document.getElementById('new-goal-container');
+        if(newGoalContainer.style.display == 'none'){
+            newGoalContainer.style.display = 'block';
+        } else {
+            newGoalContainer.style.display = 'none';
+        }
+    })
+
     getGoals().then((data) => {
         window.goals = data;
         renderGoals()

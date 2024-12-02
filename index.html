@@ -23,8 +23,24 @@
                 <h2>Goals</h2>
             </div>
             <div>
-                <button class="button-primary" type="submit">New goal</button>
+                <button id="new-goal-button" class="button-primary" type="submit">New goal</button>
             </div>
+        </div>
+        <div id="new-goal-container" style="display: none;">
+            <form action="submit">
+                <label for="goal-name"></label>
+                <input id="goal-name" type="text" placeholder="Goal Name">
+                <select name="" id="goal-frequency_type">
+                    <option value="DAY">Day</option>
+                    <option value="WEEK">Week</option>
+                    <option value="MONTH">Month</option>
+                    <option value="QUARTER">Quarter</option>
+                    <option value="YEAR">Year</option>
+                </select>
+                <label for="goal-frequency"></label>
+                <input id="goal-frequency" type="number" placeholder="Goal Frequency">
+                <button>Add goal</button>
+            </form>
         </div>
         <div class="goal-list">
             <!--List Items-->
