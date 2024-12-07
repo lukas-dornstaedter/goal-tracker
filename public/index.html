@@ -27,7 +27,7 @@
             </div>
         </div>
         <div id="new-goal-container" style="display: none;">
-            <form action="submit">
+            <form>
                 <label for="goal-name"></label>
                 <input id="goal-name" type="text" placeholder="Goal Name">
                 <select name="" id="goal-frequency_type">
@@ -39,7 +39,9 @@
                 </select>
                 <label for="goal-frequency"></label>
                 <input id="goal-frequency" type="number" placeholder="Goal Frequency">
-                <button>Add goal</button>
+                <div style="display: flex;">
+                    <button id="new-gaol">Add goal</button><button id="cancel-new-gaol" class="button-secondary">Cancel</button>
+                </div>
             </form>
         </div>
         <div class="goal-list">

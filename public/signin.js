@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
           })
         
         if(error==null){
-            window.location.href = '/index.html'
+            window.location.href = 'index.html'
         } else {
             alertText.innerText = 'Signin failed. Try again.';
             alertText.style.color = 'red';
@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
 // Redirect if user already signed in
 supabase.auth.onAuthStateChange((event, session) => {
     if (event === 'SIGNED_IN') {
-        window.location.href = '/index.html'
+        window.location.href = 'index.html'
     }
   })
 
