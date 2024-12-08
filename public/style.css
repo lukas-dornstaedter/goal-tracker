@@ -194,3 +194,41 @@ a {
     border-bottom: 2px solid #6c63ff;
   }
   
+ 
+  .donut-progress {
+    position: relative;
+    width: 120px;
+    height: 120px;
+  }
+  
+  .donut {
+    transform: rotate(-90deg);
+    width: 100%;
+    height: 100%;
+  }
+  
+  .donut-bg {
+    fill: none;
+    stroke: #ddd;
+    stroke-width: 3;
+  }
+  
+  .donut-progress-fill {
+    fill: none;
+    stroke: #007bff;
+    stroke-width: 3;
+    stroke-dasharray: 94.2; /* Umfang des Kreises (2 * π * Radius) */
+    stroke-dashoffset: 94.2; /* Vollständig verborgen */
+    transition: stroke-dashoffset 0.3s ease;
+  }
+  
+  .donut-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  
